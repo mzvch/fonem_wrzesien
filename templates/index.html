@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block head %}
+    <style>
+        .active-index {
+            font-weight: 400;
+        }
+    @media screen and (max-width: 600px) {
+            .active-index {
+                font-weight: 500;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .active-index {
+                font-weight: 500;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <form action="#">
+            <input type="text" id="fname" name="firstname" placeholder="wpisz słowo">
+
+
+            <input type="text" id="lname" name="lastname" placeholder="[ tłumaczenie ]">
+            <br>
+            <input type="submit" value="tłumacz">
+        </form>
+    </div>
+{% endblock %}
